@@ -67,6 +67,18 @@
                     <target>${java.version}</target>
                 </configuration>
             </plugin>
+            <plugin>
+               <groupId>org.sonarsource.scanner.maven</groupId>
+               <artifactId>sonar-maven-plugin</artifactId>
+               <version>3.11.0.3923</version>
+            </plugin>
+    
+    <!-- Bind to Maven lifecycle -->
+            <plugin>
+               <groupId>org.apache.maven.plugins</groupId>
+               <artifactId>maven-surefire-plugin</artifactId>
+               <version>3.2.5</version>
+            </plugin>
 
         </plugins>
     </build>
